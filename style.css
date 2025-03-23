@@ -1,0 +1,97 @@
+ body {
+            background-image: url('https://i.pinimg.com/1200x/12/cf/dc/12cfdcbb2320824919f1f1b119591d39.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh; /* Memastikan tinggi halaman 100% dari layar */
+            margin: 0;
+        }
+        .judul {
+            font-family: 'Cherry Bomb One', cursive; /* Font dari Google Fonts */
+            font-size: 50px; /* Ukuran besar */
+            font-weight: bold; /* Membuat teks lebih tebal */
+            color: white; /* Warna teks putih */
+            text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+            text-shadow: 
+                -6px -2px 8px #3674B5,  
+                 6px -2px 8px #3674B5,  
+                -6px 2px 8px #3674B5,  
+                 6px 2px 8px #3674B5; /* Efek stabilo */
+        }
+        /* Tombol 3: Tombol dengan efek 3D */
+        .btn-3d {
+            background-color: #FF5733;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px #C13B20;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-3d:active {
+            box-shadow: 0 2px #C13B20;
+            transform: translateY(3px);
+        }
+
+        /*INI DARI CHATGPT*/
+        .card {
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .card-inner {
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+        .flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .card-front {
+            background: linear-gradient(135deg, #6DA3D3, #1E3A5F); /* Gradasi biru sesuai background 
+            background: #FDBE34;*/
+            color: #ffffff;
+        }
+        .card-back {
+            background: white;
+            transform: rotateY(180deg);
+        }
+        .card-back img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .lightbox {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        .matched {
+            /*pointer-events: none;*/
+        }
