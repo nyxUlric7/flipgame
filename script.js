@@ -93,6 +93,7 @@
                 // Cek apakah kartu yang dipilih adalah bom
                 if (this.dataset.image === "https://i.ibb.co.com/PGzsNv4K/bom.png") {
                     setTimeout(() => {
+                        document.getElementById('bombSound').play();
                         showModal("Duaarr", "Poin kamu dikurangi");
                         //alert("Kamu memilih bom! Pilihan direset.");
                         this.classList.add('bomb-revealed'); // Tambahkan kelas agar tetap terbuka
