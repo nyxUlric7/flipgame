@@ -1,7 +1,4 @@
-        document.getElementById("flipSound").src = "https://assets.mixkit.co/active_storage/sfx/1117/1117-preview.mp3";
-        document.getElementById("matchSound").src = "https://assets.mixkit.co/active_storage/sfx/270/270-preview.mp3";
-        document.getElementById("winSound").src = "https://assets.mixkit.co/active_storage/sfx/2019/2019-preview.mp3";
-
+        
         let uploadedImages = [];
         let selectedCards = [];
         let matchedPairs = 0;
