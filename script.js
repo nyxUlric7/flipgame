@@ -37,7 +37,7 @@
             let bombCount = Math.floor(totalPairs / 3); 
             let totalCards = (totalPairs * 2) + bombCount; // Total kartu termasuk bom
             
-            let bombImage = "https://i.ibb.co.com/d00nWHGw/bom.png";
+            let bombImage = "https://i.ibb.co.com/PGzsNv4K/bom.png";
 
             let allCards = [...uploadedImages, ...uploadedImages]; // Duplikasi gambar untuk pasangan
     
@@ -91,7 +91,7 @@
                 selectedCards.push(this);
 
                 // Cek apakah kartu yang dipilih adalah bom
-                if (this.dataset.image === "https://i.ibb.co.com/d00nWHGw/bom.png") {
+                if (this.dataset.image === "https://i.ibb.co.com/PGzsNv4K/bom.png") {
                     setTimeout(() => {
                         showModal("Duaarr", "Poin kamu dikurangi");
                         //alert("Kamu memilih bom! Pilihan direset.");
